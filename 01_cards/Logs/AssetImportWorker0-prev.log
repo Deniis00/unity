@@ -1,0 +1,989 @@
+Using pre-set license
+Built from '2022.2/staging' branch; Version is '2022.2.0b11 (fbf253239670) revision 16511571'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'es' Physical Memory: 8054 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.2.0b11\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Denis/Desktop/Unity/01_cards
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+60533
+Successfully changed project path to: C:/Users/Denis/Desktop/Unity/01_cards
+C:/Users/Denis/Desktop/Unity/01_cards
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Initialize engine version: 2022.2.0b11 (fbf253239670)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.2.0b11/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Denis/Desktop/Unity/01_cards/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c8d)
+    Vendor:   NVIDIA
+    VRAM:     4021 MB
+    Driver:   27.21.14.5655
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.2.0b11/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.2.0b11/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.2.0b11/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56176
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.0b11/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.015889 seconds.
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+- Loaded All Assemblies, in  0.606 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.775 seconds
+Domain Reload Profiling:
+	ReloadAssembly (343ms)
+		BeginReloadAssembly (131ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		LoadAllAssembliesAndSetupDomain (0ms)
+			LoadAssemblies (127ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (248ms)
+				TypeCache.Initialize (247ms)
+					TypeCache.ScanAssembly (244ms)
+				ResolveRequiredComponents (1ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (631ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (14ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (450ms)
+				ProcessInitializeOnLoadMethodAttributes (145ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Registering precompiled user dll's ...
+Registered in 0.008454 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Denis\Desktop\Unity\01_cards\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Denis\Desktop\Unity\01_cards\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.123 seconds
+Refreshing native plugins compatible for Editor in 1.66 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.770 seconds
+Domain Reload Profiling:
+	ReloadAssembly (353ms)
+		BeginReloadAssembly (198ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		LoadAllAssembliesAndSetupDomain (764ms)
+			LoadAssemblies (144ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (703ms)
+				TypeCache.Initialize (435ms)
+					TypeCache.ScanAssembly (430ms)
+				ResolveRequiredComponents (5ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (583ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (10ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (93ms)
+				ProcessInitializeOnLoadAttributes (409ms)
+				ProcessInitializeOnLoadMethodAttributes (51ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
+Refreshing native plugins compatible for Editor in 1.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3395 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (61.7 KB). Loaded Objects now: 3869.
+Memory consumption went from 0.51 GB to 0.51 GB.
+Total: 3.927700 ms (FindLiveObjects: 0.574900 ms CreateObjectMapping: 0.472700 ms MarkObjects: 2.790800 ms  DeleteObjects: 0.088300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 51834.360666 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/IconMap/AnimatorMessageListener@32x.png
+  artifactKey: Guid(9059e055aa673b3469a5c2896c0b8fb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/IconMap/AnimatorMessageListener@32x.png using Guid(9059e055aa673b3469a5c2896c0b8fb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c3ed668f8b08d3bd7d73501193bd594') in 0.241200 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/back-dark.png
+  artifactKey: Guid(8e3ec2dfd58b79842aa78376678a9a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/back-dark.png using Guid(8e3ec2dfd58b79842aa78376678a9a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e58641c82faf2df975914045109ae2cb') in 0.027262 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/added-file-dark.png
+  artifactKey: Guid(1a4f52b613391cd449af3ad2e44affeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/added-file-dark.png using Guid(1a4f52b613391cd449af3ad2e44affeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd81fbcb3ad3551bcb962d9be405253ce') in 0.025412 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/back-dark@2x.png
+  artifactKey: Guid(9c6313a5316f8a34b852bf94ff96e3ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/back-dark@2x.png using Guid(9c6313a5316f8a34b852bf94ff96e3ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5a5a3bc5f77e9b218f7d7caca0aad25') in 0.033787 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/added-file-dark@2x.png
+  artifactKey: Guid(c223e0c507e2c6549a2cb97441b62cbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/added-file-dark@2x.png using Guid(c223e0c507e2c6549a2cb97441b62cbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '741bfffb273ee82f1d98de75efb2e8c2') in 0.027222 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/added-file-light@2x.png
+  artifactKey: Guid(ec2e3aa6d0ab8ce4eac29b56d65d61d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/added-file-light@2x.png using Guid(ec2e3aa6d0ab8ce4eac29b56d65d61d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dbf384f2723a5973c67d034fa1ea3f3') in 0.026182 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/back-light.png
+  artifactKey: Guid(e676ab7aa99535447a763c9f88bf9260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/back-light.png using Guid(e676ab7aa99535447a763c9f88bf9260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8a6109c774da46faaa0e5f52b6a7749') in 0.027494 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/added-file-light.png
+  artifactKey: Guid(397fff6c3885f8343bb65714f0064b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/added-file-light.png using Guid(397fff6c3885f8343bb65714f0064b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61a94f4986edde55acf3fa8195643980') in 0.056018 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 619.024361 seconds.
+  path: Assets/Scenes/Prototype 1.unity
+  artifactKey: Guid(84729eeda748340d0955715b6a50b370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Scenes/Prototype 1.unity using Guid(84729eeda748340d0955715b6a50b370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db7a7eca507cfd23b9fc745c9fbca0ac') in 0.021779 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.899952 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39a9ec938f748eb69ea5b0134aecd330') in 0.025400 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 4964.987138 seconds.
+  path: Assets/Course Library
+  artifactKey: Guid(2b8dcb33ac42f44ae9fb6f5c8514007f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Course Library using Guid(2b8dcb33ac42f44ae9fb6f5c8514007f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ede2c9d9adf279b04575a839cb9b7af') in 0.025344 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.843617 seconds.
+  path: Assets/Course Library/Vehicles
+  artifactKey: Guid(2908f202f052a4d2bb20f125b017534d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Course Library/Vehicles using Guid(2908f202f052a4d2bb20f125b017534d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd376069b2b79f687ec49304bd6e410a3') in 0.014741 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.135712 seconds.
+  path: Assets/Course Library/Vehicles/Veh_Armor_Car_01.prefab
+  artifactKey: Guid(aea2a6cdcc9d7944090d528486ebaee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Course Library/Vehicles/Veh_Armor_Car_01.prefab using Guid(aea2a6cdcc9d7944090d528486ebaee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66d0170ba2097a676692bad85eea8973') in 2.040594 seconds 
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Course Library/Vehicles/Veh_Car_Blue_Z.prefab
+  artifactKey: Guid(09082afec7b5e824ca611a0cc3264bcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Course Library/Vehicles/Veh_Car_Blue_Z.prefab using Guid(09082afec7b5e824ca611a0cc3264bcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '276ac29b852be8892e80429cd8a27107') in 0.053146 seconds 
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Course Library/Vehicles/Veh_Bus_Blue_Z.prefab
+  artifactKey: Guid(da59e5a3713884d4f9e9667c2befa1a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Course Library/Vehicles/Veh_Bus_Blue_Z.prefab using Guid(da59e5a3713884d4f9e9667c2befa1a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '118cd60fa3a4947dc7828bebbb172a27') in 0.028542 seconds 
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.000955 seconds.
+  path: Assets/Course Library/Vehicles/Veh_Ute_Red_Z.prefab
+  artifactKey: Guid(70bf34f6c25c948458f254e87188b00b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Course Library/Vehicles/Veh_Ute_Red_Z.prefab using Guid(70bf34f6c25c948458f254e87188b00b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d55839c2d5ff7e88b604b8fd4b2407f') in 0.027872 seconds 
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Course Library/Vehicles/Veh_Van_Green_Z.prefab
+  artifactKey: Guid(68840c673a0b18e41a044ed077548d55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Course Library/Vehicles/Veh_Van_Green_Z.prefab using Guid(68840c673a0b18e41a044ed077548d55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c0b9bc17968178c2898153f4a52cc38') in 0.029209 seconds 
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 26.542942 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(cef7ea228444a5141a54b2ac3bc5f03e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Scenes using Guid(cef7ea228444a5141a54b2ac3bc5f03e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52f71b2d4275c9f7872820960ccb1f8c') in 0.010686 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1271.226195 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8db5a0981ca6e5ad47cee9c31513d112') in 0.015693 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.020599 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Denis\Desktop\Unity\01_cards\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Denis\Desktop\Unity\01_cards\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  2.302 seconds
+Refreshing native plugins compatible for Editor in 1.64 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+System.MissingMethodException: Method not found: void UnityEditor.PluginImporter.SetShouldOverridePredicate(System.Predicate`1<string>)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 35.024 seconds
+Domain Reload Profiling:
+	ReloadAssembly (936ms)
+		BeginReloadAssembly (817ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (357ms)
+		LoadAllAssembliesAndSetupDomain (1360ms)
+			LoadAssemblies (240ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1245ms)
+				TypeCache.Initialize (428ms)
+					TypeCache.ScanAssembly (413ms)
+				ResolveRequiredComponents (5ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (589ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (21ms)
+				SetLoadedEditorAssemblies (19ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (131ms)
+				ProcessInitializeOnLoadAttributes (368ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 2.91 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3432 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 11 unused Assets / (29.2 KB). Loaded Objects now: 3928.
+Memory consumption went from 0.52 GB to 0.52 GB.
+Total: 10.531100 ms (FindLiveObjects: 1.230100 ms CreateObjectMapping: 1.015300 ms MarkObjects: 8.210700 ms  DeleteObjects: 0.073400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.analytics@3.2.2/DataPrivacy/DataPrivacy.cs: 4e8a50e58b719627ff706452cfe762c1 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/precompiled-assembly-types:Unity.Analytics.DataPrivacy: 66a018f40d2d71c0723e29d10ef2d28f -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.analytics@3.2.2/DataPrivacy/DataPrivacyButton.cs: 72f353f5fe45ddb0df1f179cf7fb7389 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:UnityEditor.Advertisements:  -> 0a969f6cb568cb6df99193a707600f32
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016949 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Denis\Desktop\Unity\01_cards\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Denis\Desktop\Unity\01_cards\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.840 seconds
+Refreshing native plugins compatible for Editor in 3.57 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+System.MissingMethodException: Method not found: void UnityEditor.PluginImporter.SetShouldOverridePredicate(System.Predicate`1<string>)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.255 seconds
+Domain Reload Profiling:
+	ReloadAssembly (486ms)
+		BeginReloadAssembly (301ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (14ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (102ms)
+		LoadAllAssembliesAndSetupDomain (1349ms)
+			LoadAssemblies (164ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1296ms)
+				TypeCache.Initialize (697ms)
+					TypeCache.ScanAssembly (680ms)
+				ResolveRequiredComponents (14ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (1120ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (32ms)
+				SetLoadedEditorAssemblies (18ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (180ms)
+				ProcessInitializeOnLoadAttributes (809ms)
+				ProcessInitializeOnLoadMethodAttributes (65ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 2.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3432 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 11 unused Assets / (36.4 KB). Loaded Objects now: 3931.
+Memory consumption went from 0.52 GB to 0.52 GB.
+Total: 7.792400 ms (FindLiveObjects: 1.119700 ms CreateObjectMapping: 0.856600 ms MarkObjects: 5.717300 ms  DeleteObjects: 0.096400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.analytics@3.2.2/DataPrivacy/DataPrivacy.cs: 4e8a50e58b719627ff706452cfe762c1 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/precompiled-assembly-types:Unity.Analytics.DataPrivacy: 66a018f40d2d71c0723e29d10ef2d28f -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.analytics@3.2.2/DataPrivacy/DataPrivacyButton.cs: 72f353f5fe45ddb0df1f179cf7fb7389 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:UnityEngine.Purchasing:  -> 321b88ab8592587b15dfe7f2184fdc9f
+  custom:scripting/precompiled-assembly-types:UnityEditor.Advertisements:  -> 0a969f6cb568cb6df99193a707600f32
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009306 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Denis\Desktop\Unity\01_cards\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Denis\Desktop\Unity\01_cards\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.246 seconds
+Refreshing native plugins compatible for Editor in 2.81 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+System.MissingMethodException: Method not found: void UnityEditor.PluginImporter.SetShouldOverridePredicate(System.Predicate`1<string>)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.867 seconds
+Domain Reload Profiling:
+	ReloadAssembly (277ms)
+		BeginReloadAssembly (173ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		LoadAllAssembliesAndSetupDomain (964ms)
+			LoadAssemblies (120ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (910ms)
+				TypeCache.Initialize (399ms)
+					TypeCache.ScanAssembly (388ms)
+				ResolveRequiredComponents (8ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (877ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (31ms)
+				SetLoadedEditorAssemblies (35ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (152ms)
+				ProcessInitializeOnLoadAttributes (575ms)
+				ProcessInitializeOnLoadMethodAttributes (64ms)
+				AfterProcessingInitializeOnLoad (19ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 4.10 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3432 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 11 unused Assets / (36.5 KB). Loaded Objects now: 3934.
+Memory consumption went from 0.52 GB to 0.52 GB.
+Total: 6.690400 ms (FindLiveObjects: 0.636200 ms CreateObjectMapping: 1.546400 ms MarkObjects: 4.355800 ms  DeleteObjects: 0.148900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.analytics@3.2.2/DataPrivacy/DataPrivacy.cs: 4e8a50e58b719627ff706452cfe762c1 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/precompiled-assembly-types:Unity.Analytics.DataPrivacy: 66a018f40d2d71c0723e29d10ef2d28f -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.analytics@3.2.2/DataPrivacy/DataPrivacyButton.cs: 72f353f5fe45ddb0df1f179cf7fb7389 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:UnityEngine.Purchasing:  -> 321b88ab8592587b15dfe7f2184fdc9f
+  custom:scripting/precompiled-assembly-types:UnityEditor.Advertisements:  -> 0a969f6cb568cb6df99193a707600f32
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009730 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Denis\Desktop\Unity\01_cards\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Denis\Desktop\Unity\01_cards\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.349 seconds
+Refreshing native plugins compatible for Editor in 1.82 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+System.MissingMethodException: Method not found: void UnityEditor.PluginImporter.SetShouldOverridePredicate(System.Predicate`1<string>)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.515 seconds
+Domain Reload Profiling:
+	ReloadAssembly (379ms)
+		BeginReloadAssembly (213ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (60ms)
+		LoadAllAssembliesAndSetupDomain (962ms)
+			LoadAssemblies (168ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (859ms)
+				TypeCache.Initialize (460ms)
+					TypeCache.ScanAssembly (446ms)
+				ResolveRequiredComponents (11ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (862ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (21ms)
+				SetLoadedEditorAssemblies (12ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (94ms)
+				ProcessInitializeOnLoadAttributes (681ms)
+				ProcessInitializeOnLoadMethodAttributes (40ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Refreshing native plugins compatible for Editor in 4.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3654 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 11 unused Assets / (36.4 KB). Loaded Objects now: 4159.
+Memory consumption went from 0.55 GB to 0.55 GB.
+Total: 4.682600 ms (FindLiveObjects: 0.479900 ms CreateObjectMapping: 0.446000 ms MarkObjects: 3.668500 ms  DeleteObjects: 0.086900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLight.cs: 5def5fa0c94426100af916b97b3b7028 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxObject.cs: 22901937c83410c82a079ff7fceb58dc -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxMarker.cs: f0c12d9017c19e89cf779f137b396c51 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxConstraintPosition.cs: d2eff2c9ae30cc45f159fb343326a38b -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/ExportSettings.cs: 8e74d5aaceb3bb0db2b558dbd555565b -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxSkeleton.cs: 5f421fe218c2cb9ba0356a7a8279fbcd -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyNullELook.cs: b3c41a31e7c05e33d492c05e29faefd0 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/FbxExporter.cs: 478840a9f3d97bc04e8c003cecc5f423 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxStatus.cs: e0f858a177f1c1fb39ef05202160624e -> 
+  custom:scripting/precompiled-assembly-types:Autodesk.Fbx.Editor: 131686b3d30b6db0c15c8010038e862d -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/FbxExportTimelineAction.cs: e559b4fb29542e203982b9a404316b7b -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyFlags.cs: 31b311a0ff82ed3ccc169e76c482eff1 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.analytics@3.2.2/DataPrivacy/DataPrivacy.cs: 4e8a50e58b719627ff706452cfe762c1 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxTimeSpan.cs: 5d2607b0cda668430aeb31b79ceef216 -> 
+  custom:scripting/precompiled-assembly-types:Autodesk.Fbx: 551e9f33d26aee46a007b969d3c9262e -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxDouble4x4.cs: ae149be842cc8e03152b34b334239b73 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxDataType.cs: 8afa2284a1d3520c6c7b056b41c013dd -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementArray.cs: f198dec82146e3d89a7d025f49bcd332 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/ConvertToPrefabSettings.cs: 51fc9323133a3116f2cf5fdc2eaf37af -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxBindingTableEntry.cs: 605bd69e9b5692d5effddbfc32526f7b -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxNode.cs: 19ee172d8b678ec052a7c50adc93089f -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxMatrix.cs: 2c5d11da739bae5ab7a9e6287e3f635f -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/IExportData.cs: fe9878291c2fc74de885772c14372b76 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyEAreaLightShape.cs: 07528d7283f9e29a60acbba21cbbc01e -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayer.cs: 7f5bb0bfd9e60d05e9ff383d46ec8267 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxCluster.cs: da8abc8a471c252ab20f37672a71294e -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyDouble3.cs: 7214a26730fd8b30e98740c4804cff61 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementMaterial.cs: 8c9dc6eccc3eb760e041679d54fb684e -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/ExportModelSettings.cs: 3c603a46d226c5b6b9a2498acb82831c -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyFloat.cs: c363c4af4c6e907f7bd3c82665343894 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxAxisSystem.cs: 3ba61d9c458d48f1830eeaf919a573ab -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxEuler.cs: 78ce073ba7cd774c97fd3fec848d1d22 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementUV.cs: 3768c80af8f548fba07e2c5faa6364cd -> 
+  custom:scripting/precompiled-assembly-types:Unity.Analytics.DataPrivacy: 66a018f40d2d71c0723e29d10ef2d28f -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxTexture.cs: f97a3797113512f7d0d907cbda6684fc -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementNormal.cs: 26c5093132973342a1cf62e727ceabf9 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxFileTexture.cs: 093fe1d8d33acdb09ab59ebb9b725168 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/FbxPropertyChannelPair.cs: c1a876e2d1aa01463d1892fd50b03e17 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxDocument.cs: 0550a92e67733c3dc5a87f70d596a44e -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.analytics@3.2.2/DataPrivacy/DataPrivacyButton.cs: 72f353f5fe45ddb0df1f179cf7fb7389 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxConstraintScale.cs: bceae67b357d03a6f01e0d2a41c8fe70 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxAnimStack.cs: cd827408506b52689ab211c452254bdf -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Runtime/FbxPrefab.cs: 0d37a0275409adc5d549e4d1fc6d5bf7 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxIOFileHeaderInfo.cs: 2f533e3b2e35800afb9637e46763a4d2 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementArrayTemplateFbxColor.cs: 5152d886d8a25c3888aae80f96bce43d -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementVertexColor.cs: a848de8bf2124bd81bf8bcb7a2d65b0d -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxDeformer.cs: eaf4846ef3982ac5d1a664b2ad250993 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxSubDeformer.cs: f5160f8ddaa4b846839699b92041e395 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementArrayTemplateInt.cs: 6ef48c5951f82f75d16dff92ec083434 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementArrayTemplateFbxVector4.cs: abba7e9bde8ed41768aeb11419eadebe -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyEntryView.cs: 44e13baac7c841e4a620a4c82f1c75fd -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementTemplateFbxVector2.cs: d2cb18b2db40df38e585413819958705 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxCamera.cs: ff6f9ac7210e395dab3784e2d0c7fb91 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxScene.cs: 71ae3ce294fa1135cc2c4e9db34b0d1f -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxSurfaceMaterial.cs: eb900b126346156d69160840468ae69c -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxExporter.cs: 074ffe2916f454612e1a5a03e91ba9f4 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxIOBase.cs: b7908a419727520f0eb24140c7edaad4 -> 
+  custom:scripting/precompiled-assembly-types:Unity.Formats.Fbx.Runtime: 6b9ac96ec650db1b8ec22f94f57370e3 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxDocumentInfo.cs: 863cb0899b508f7826edd27548c99530 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/CustomExtensions.cs: 4dd2d579b175e1cfed48fcf67b4a834f -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxSemanticEntryView.cs: cfd002bcde442a3b5e643bb8a652b3f6 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLimits.cs: 88b1e072f91c043e0a42a1ace2ad849c -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementTemplateFbxSurfaceMaterial.cs: e1cbaa144cc286681d8503e6027ad7eb -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementBinormal.cs: 79b92f8d75f3392867b4e08b0bc010bc -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxTime.cs: 7ff870fb104aeff8c3e2fd6db612200f -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyELightType.cs: 4ac91b0f1a9bbd09fc595f357b2c3c6f -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxConstraint.cs: bef035e770af75152f9736986a060ae9 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxBindingTableBase.cs: b215adae3ec7fbfda953323d2a2d2314 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/ExportModelEditorWindow.cs: cf701718ac83fb293467c7c3e1c28063 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxTransform.cs: 23a8d5f81f4b3a51c97bab2fcfe349f0 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/ConvertToPrefabEditorWindow.cs: 3236649dc377dd18cad8e7f8b876ec5b -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/InstallIntegration.cs: d9c189ac718e03ccb133c538d8fe3ebc -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxIOSettings.cs: 3fd153d39b55fff27e36563685561a58 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxProperty.cs: 3819dd05a82badd129a7f6e365473927 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxManager.cs: 23552d9ea4b9cd586cf62f846c77ccc9 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxBindingTable.cs: 740dc5c493e5cc9529c43633fb8185b3 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxConstraintParent.cs: 567cb2edc39ae3219c9b505daf674f7b -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Tests/Runtime/BuildTestsAssets/ExportEmptyFbx.cs: cd15797793c8de7703f841d592f40745 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxAnimCurveDef.cs: 740d8ae75b4a6076bf9e3e485b5b77f1 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyEBlendMode.cs: b3f5b36afebc764d62687b9487a92855 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/ConvertToNestedPrefab.cs: 442c41c99487f072ce4f79d90127da06 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxIOPluginRegistry.cs: 80f28650270352b658e89584ba53cf78 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxGlobalSettings.cs: 5a71ade068c99f9827828d54891eac38 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxCollection.cs: a7719a3c7d0f9755fa5160248c6f774d -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxImporter.cs: c3c30d73aea4c9486679b1cb2c42fcc9 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyEInheritType.cs: d98edf98fb0d376c66dfc7407ff7569f -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxConnection.cs: c29cd84f9c806c9ea605731e79167951 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxBlendShapeChannel.cs: 3a215ea3695097f400752aee08963ccf -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxAnimLayer.cs: a33542128507b1a9774126b009d92729 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxDoubleTemplates.cs: 1f4bbdb65eab2cdcb62f8165d2d82517 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyEGateFit.cs: d574bcd3d387155bb8ad22d046aba357 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/Globals.cs: be110017fafd9c73fa3c7cb5418284c9 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxEntryView.cs: dda744d71a7635018a7cc355b067f8de -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxNull.cs: 36aaf400046069e6292d17219d1c069c -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyBool.cs: b6e61da9a36971e93e14e86c261e72ce -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxConstraintAim.cs: 8042fd5ecfe9611849c3efd3eae14f36 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/NativeMethods.cs: 70fbb7de8aca0ab13d10f653d9a9340f -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxNurbsCurve.cs: 7351470297bac997ad5edd9cd3f442bd -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxAnimCurve.cs: 1c6d4e7669f1bc6ab32b5099f00d5d1f -> 
+  custom:scripting/precompiled-assembly-types:FbxBuildTestAssets: 34d178bb1c77e088096c012eed8014f4 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxEmitter.cs: d089011a2111ed9ba11a9c8860650eb8 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyDouble.cs: 86532092f8e5ac4165190f00bc6ddac1 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyString.cs: d0a70ad46a27988a0de613fe0dfe1101 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxSystemUnit.cs: 6b7165429f04d0292818b2ed51eabaf9 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxSkin.cs: 72472130cbf13c197e5a2956817d0bbe -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxAnimCurveBase.cs: 9fe9d6e0aecd8db0e60172d04d297415 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxAnimCurveNode.cs: 045cd34a26302a4340887f5c3df9fa56 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxGeometryBase.cs: b80921b904337d64836aab1315c4d8e6 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxSharpProgressCallback.cs: 287fc1227ff9f95ac9aeac5470d49ebd -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElement.cs: dab154f20ea89abf2af8fdd1c43afd0e -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementTemplateFbxColor.cs: 67fe6682d5c4e04a833c363e4d758dc1 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/FbxExporterRepairMissingScripts.cs: 820d40b5e304f02a2207f1df5b1786dd -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerContainer.cs: b8551e2966ce622b87cc1c0d7efe8675 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxNodeAttribute.cs: ad02766235b43e67881cc4772606f552 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/CameraVisitor.cs: 48db874b39f8e385ca58be5a45f5fa5a -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementArrayTemplateFbxSurfaceMaterial.cs: 21e550ba2ba7280355bc56f25c8e734e -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/FbxExportPresetSelectorReceiver.cs: 933e0be0fa35b1c35e22280b93f58ee2 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxAnimCurveFilterUnroll.cs: ca0ada5a99f9d147676f2f2da1ce17d5 -> 
+  custom:scripting/precompiled-assembly-types:Unity.Formats.Fbx.Editor: e2addd7129e664400fdaa8a057c7778c -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxMesh.cs: 36136025ac0d1b58ae078d0542791c7f -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxConstraintRotation.cs: 3333049bba08581233d423cbcae9458d -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/FbxRotationCurve.cs: 4d79211517d12383e808d7f97564ccb8 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementTangent.cs: 2b2abf74c10dcaf3633f4d98533e4487 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyMarkerELook.cs: 1d1de918f87923247ec760d3faf16ac8 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementTemplateFbxVector4.cs: 33022fe870edf908b370d76dc35c9c8f -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxSurfaceLambert.cs: 913f4d72375b7f7e78565ef67e10c9da -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyInt.cs: 6df0f2671e699b6498dcabcaa8c11ccd -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxSurfacePhong.cs: 813b21c1960d4edd5c5f62353114802e -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyEWrapMode.cs: 27e00afb727c68841210366fd4f5c513 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxAnimCurveKey.cs: 9fbd8256730f9061582d48eb9944b171 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxShape.cs: 2a21f02fd9e62c646acad319734f118d -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxQuaternion.cs: 50f937e4494a3493328884eacd695857 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementArrayTemplateFbxVector2.cs: 5c3a6f20f8c80779ca7828c92f33194b -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPose.cs: 88c58779797f89edb2d34cfb8d39c646 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxAMatrix.cs: ceeb6eba84b583e8ed408cffdde01580 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyEDecayType.cs: 52925515d890eaaad1885ac2cab26e28 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxImplementation.cs: 7b47a353c3978648ba37a31403bb9735 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxBlendShape.cs: a98858c64d72c6e061f0cb0d29151c84 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyEProjectionType.cs: 1f2afeb1b2c72f62924f8d131875efd5 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxGeometry.cs: 48013c33c3d7f63d61eeadad3653c3fa -> 
+  custom:scripting/precompiled-assembly-types:UnityEngine.Purchasing:  -> 321b88ab8592587b15dfe7f2184fdc9f
+  custom:scripting/precompiled-assembly-types:UnityEditor.Advertisements:  -> 0a969f6cb568cb6df99193a707600f32
+========================================================================
+Received Import Request.
+  Time since last request: 5803.506962 seconds.
+  path: Assets/Course Library/Vehicles/Veh_Armor_Car_01.prefab
+  artifactKey: Guid(aea2a6cdcc9d7944090d528486ebaee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Course Library/Vehicles/Veh_Armor_Car_01.prefab using Guid(aea2a6cdcc9d7944090d528486ebaee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '755e16eaf01eb8780b1d24f9d1c3abdd') in 0.963043 seconds 
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Course Library/Vehicles/Veh_Car_Blue_Z.prefab
+  artifactKey: Guid(09082afec7b5e824ca611a0cc3264bcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Course Library/Vehicles/Veh_Car_Blue_Z.prefab using Guid(09082afec7b5e824ca611a0cc3264bcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1653a97f30dc01209a71a0fbb54b6614') in 0.314581 seconds 
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Course Library/Vehicles/Veh_Bus_Blue_Z.prefab
+  artifactKey: Guid(da59e5a3713884d4f9e9667c2befa1a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Course Library/Vehicles/Veh_Bus_Blue_Z.prefab using Guid(da59e5a3713884d4f9e9667c2befa1a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b06f8527ccc34d64721153ccf2cc304d') in 0.050118 seconds 
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Course Library/Vehicles/Veh_Ute_Red_Z.prefab
+  artifactKey: Guid(70bf34f6c25c948458f254e87188b00b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Course Library/Vehicles/Veh_Ute_Red_Z.prefab using Guid(70bf34f6c25c948458f254e87188b00b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66b26e41830cbdf000574240bdf12224') in 0.091695 seconds 
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Course Library/Vehicles/Veh_Van_Green_Z.prefab
+  artifactKey: Guid(68840c673a0b18e41a044ed077548d55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Course Library/Vehicles/Veh_Van_Green_Z.prefab using Guid(68840c673a0b18e41a044ed077548d55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '844359bbd7ac4ebeb0140adf0daeb9fa') in 0.113088 seconds 
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.018948 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Denis\Desktop\Unity\01_cards\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Denis\Desktop\Unity\01_cards\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  2.152 seconds
+Refreshing native plugins compatible for Editor in 2.94 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+System.MissingMethodException: Method not found: void UnityEditor.PluginImporter.SetShouldOverridePredicate(System.Predicate`1<string>)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 32.115 seconds
+Domain Reload Profiling:
+	ReloadAssembly (886ms)
+		BeginReloadAssembly (447ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (64ms)
+		LoadAllAssembliesAndSetupDomain (1261ms)
+			LoadAssemblies (398ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1180ms)
+				TypeCache.Initialize (664ms)
+					TypeCache.ScanAssembly (652ms)
+				ResolveRequiredComponents (9ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (526ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (11ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (94ms)
+				ProcessInitializeOnLoadAttributes (354ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 2.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3653 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 11 unused Assets / (29.1 KB). Loaded Objects now: 4162.
+Memory consumption went from 0.55 GB to 0.55 GB.
+Total: 5.027600 ms (FindLiveObjects: 0.683900 ms CreateObjectMapping: 0.492500 ms MarkObjects: 3.798900 ms  DeleteObjects: 0.050800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLight.cs: 5def5fa0c94426100af916b97b3b7028 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxObject.cs: 22901937c83410c82a079ff7fceb58dc -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxMarker.cs: f0c12d9017c19e89cf779f137b396c51 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxConstraintPosition.cs: d2eff2c9ae30cc45f159fb343326a38b -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/ExportSettings.cs: 8e74d5aaceb3bb0db2b558dbd555565b -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxSkeleton.cs: 5f421fe218c2cb9ba0356a7a8279fbcd -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyNullELook.cs: b3c41a31e7c05e33d492c05e29faefd0 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/FbxExporter.cs: 478840a9f3d97bc04e8c003cecc5f423 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxStatus.cs: e0f858a177f1c1fb39ef05202160624e -> 
+  custom:scripting/precompiled-assembly-types:Autodesk.Fbx.Editor: 131686b3d30b6db0c15c8010038e862d -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/FbxExportTimelineAction.cs: e559b4fb29542e203982b9a404316b7b -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyFlags.cs: 31b311a0ff82ed3ccc169e76c482eff1 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.analytics@3.2.2/DataPrivacy/DataPrivacy.cs: 4e8a50e58b719627ff706452cfe762c1 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxTimeSpan.cs: 5d2607b0cda668430aeb31b79ceef216 -> 
+  custom:scripting/precompiled-assembly-types:Autodesk.Fbx: 551e9f33d26aee46a007b969d3c9262e -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxDouble4x4.cs: ae149be842cc8e03152b34b334239b73 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxDataType.cs: 8afa2284a1d3520c6c7b056b41c013dd -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementArray.cs: f198dec82146e3d89a7d025f49bcd332 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/ConvertToPrefabSettings.cs: 51fc9323133a3116f2cf5fdc2eaf37af -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxBindingTableEntry.cs: 605bd69e9b5692d5effddbfc32526f7b -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxNode.cs: 19ee172d8b678ec052a7c50adc93089f -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxMatrix.cs: 2c5d11da739bae5ab7a9e6287e3f635f -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/IExportData.cs: fe9878291c2fc74de885772c14372b76 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyEAreaLightShape.cs: 07528d7283f9e29a60acbba21cbbc01e -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayer.cs: 7f5bb0bfd9e60d05e9ff383d46ec8267 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxCluster.cs: da8abc8a471c252ab20f37672a71294e -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyDouble3.cs: 7214a26730fd8b30e98740c4804cff61 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementMaterial.cs: 8c9dc6eccc3eb760e041679d54fb684e -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/ExportModelSettings.cs: 3c603a46d226c5b6b9a2498acb82831c -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyFloat.cs: c363c4af4c6e907f7bd3c82665343894 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxAxisSystem.cs: 3ba61d9c458d48f1830eeaf919a573ab -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxEuler.cs: 78ce073ba7cd774c97fd3fec848d1d22 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementUV.cs: 3768c80af8f548fba07e2c5faa6364cd -> 
+  custom:scripting/precompiled-assembly-types:Unity.Analytics.DataPrivacy: 66a018f40d2d71c0723e29d10ef2d28f -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxTexture.cs: f97a3797113512f7d0d907cbda6684fc -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementNormal.cs: 26c5093132973342a1cf62e727ceabf9 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxFileTexture.cs: 093fe1d8d33acdb09ab59ebb9b725168 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/FbxPropertyChannelPair.cs: c1a876e2d1aa01463d1892fd50b03e17 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxDocument.cs: 0550a92e67733c3dc5a87f70d596a44e -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.analytics@3.2.2/DataPrivacy/DataPrivacyButton.cs: 72f353f5fe45ddb0df1f179cf7fb7389 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxConstraintScale.cs: bceae67b357d03a6f01e0d2a41c8fe70 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxAnimStack.cs: cd827408506b52689ab211c452254bdf -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Runtime/FbxPrefab.cs: 0d37a0275409adc5d549e4d1fc6d5bf7 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxIOFileHeaderInfo.cs: 2f533e3b2e35800afb9637e46763a4d2 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementArrayTemplateFbxColor.cs: 5152d886d8a25c3888aae80f96bce43d -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementVertexColor.cs: a848de8bf2124bd81bf8bcb7a2d65b0d -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxDeformer.cs: eaf4846ef3982ac5d1a664b2ad250993 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxSubDeformer.cs: f5160f8ddaa4b846839699b92041e395 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementArrayTemplateInt.cs: 6ef48c5951f82f75d16dff92ec083434 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementArrayTemplateFbxVector4.cs: abba7e9bde8ed41768aeb11419eadebe -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyEntryView.cs: 44e13baac7c841e4a620a4c82f1c75fd -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementTemplateFbxVector2.cs: d2cb18b2db40df38e585413819958705 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxCamera.cs: ff6f9ac7210e395dab3784e2d0c7fb91 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxScene.cs: 71ae3ce294fa1135cc2c4e9db34b0d1f -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxSurfaceMaterial.cs: eb900b126346156d69160840468ae69c -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxExporter.cs: 074ffe2916f454612e1a5a03e91ba9f4 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxIOBase.cs: b7908a419727520f0eb24140c7edaad4 -> 
+  custom:scripting/precompiled-assembly-types:Unity.Formats.Fbx.Runtime: 6b9ac96ec650db1b8ec22f94f57370e3 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxDocumentInfo.cs: 863cb0899b508f7826edd27548c99530 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/CustomExtensions.cs: 4dd2d579b175e1cfed48fcf67b4a834f -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxSemanticEntryView.cs: cfd002bcde442a3b5e643bb8a652b3f6 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLimits.cs: 88b1e072f91c043e0a42a1ace2ad849c -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementTemplateFbxSurfaceMaterial.cs: e1cbaa144cc286681d8503e6027ad7eb -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementBinormal.cs: 79b92f8d75f3392867b4e08b0bc010bc -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxTime.cs: 7ff870fb104aeff8c3e2fd6db612200f -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyELightType.cs: 4ac91b0f1a9bbd09fc595f357b2c3c6f -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxConstraint.cs: bef035e770af75152f9736986a060ae9 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxBindingTableBase.cs: b215adae3ec7fbfda953323d2a2d2314 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/ExportModelEditorWindow.cs: cf701718ac83fb293467c7c3e1c28063 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxTransform.cs: 23a8d5f81f4b3a51c97bab2fcfe349f0 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/ConvertToPrefabEditorWindow.cs: 3236649dc377dd18cad8e7f8b876ec5b -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/InstallIntegration.cs: d9c189ac718e03ccb133c538d8fe3ebc -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxIOSettings.cs: 3fd153d39b55fff27e36563685561a58 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxProperty.cs: 3819dd05a82badd129a7f6e365473927 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxManager.cs: 23552d9ea4b9cd586cf62f846c77ccc9 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxBindingTable.cs: 740dc5c493e5cc9529c43633fb8185b3 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxConstraintParent.cs: 567cb2edc39ae3219c9b505daf674f7b -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Tests/Runtime/BuildTestsAssets/ExportEmptyFbx.cs: cd15797793c8de7703f841d592f40745 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxAnimCurveDef.cs: 740d8ae75b4a6076bf9e3e485b5b77f1 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyEBlendMode.cs: b3f5b36afebc764d62687b9487a92855 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/ConvertToNestedPrefab.cs: 442c41c99487f072ce4f79d90127da06 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxIOPluginRegistry.cs: 80f28650270352b658e89584ba53cf78 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxGlobalSettings.cs: 5a71ade068c99f9827828d54891eac38 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxCollection.cs: a7719a3c7d0f9755fa5160248c6f774d -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxImporter.cs: c3c30d73aea4c9486679b1cb2c42fcc9 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyEInheritType.cs: d98edf98fb0d376c66dfc7407ff7569f -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxConnection.cs: c29cd84f9c806c9ea605731e79167951 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxBlendShapeChannel.cs: 3a215ea3695097f400752aee08963ccf -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxAnimLayer.cs: a33542128507b1a9774126b009d92729 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxDoubleTemplates.cs: 1f4bbdb65eab2cdcb62f8165d2d82517 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyEGateFit.cs: d574bcd3d387155bb8ad22d046aba357 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/Globals.cs: be110017fafd9c73fa3c7cb5418284c9 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxEntryView.cs: dda744d71a7635018a7cc355b067f8de -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxNull.cs: 36aaf400046069e6292d17219d1c069c -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyBool.cs: b6e61da9a36971e93e14e86c261e72ce -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxConstraintAim.cs: 8042fd5ecfe9611849c3efd3eae14f36 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/NativeMethods.cs: 70fbb7de8aca0ab13d10f653d9a9340f -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxNurbsCurve.cs: 7351470297bac997ad5edd9cd3f442bd -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxAnimCurve.cs: 1c6d4e7669f1bc6ab32b5099f00d5d1f -> 
+  custom:scripting/precompiled-assembly-types:FbxBuildTestAssets: 34d178bb1c77e088096c012eed8014f4 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxEmitter.cs: d089011a2111ed9ba11a9c8860650eb8 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyDouble.cs: 86532092f8e5ac4165190f00bc6ddac1 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyString.cs: d0a70ad46a27988a0de613fe0dfe1101 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxSystemUnit.cs: 6b7165429f04d0292818b2ed51eabaf9 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxSkin.cs: 72472130cbf13c197e5a2956817d0bbe -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxAnimCurveBase.cs: 9fe9d6e0aecd8db0e60172d04d297415 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxAnimCurveNode.cs: 045cd34a26302a4340887f5c3df9fa56 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxGeometryBase.cs: b80921b904337d64836aab1315c4d8e6 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxSharpProgressCallback.cs: 287fc1227ff9f95ac9aeac5470d49ebd -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElement.cs: dab154f20ea89abf2af8fdd1c43afd0e -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementTemplateFbxColor.cs: 67fe6682d5c4e04a833c363e4d758dc1 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/FbxExporterRepairMissingScripts.cs: 820d40b5e304f02a2207f1df5b1786dd -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerContainer.cs: b8551e2966ce622b87cc1c0d7efe8675 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxNodeAttribute.cs: ad02766235b43e67881cc4772606f552 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/CameraVisitor.cs: 48db874b39f8e385ca58be5a45f5fa5a -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementArrayTemplateFbxSurfaceMaterial.cs: 21e550ba2ba7280355bc56f25c8e734e -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/FbxExportPresetSelectorReceiver.cs: 933e0be0fa35b1c35e22280b93f58ee2 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxAnimCurveFilterUnroll.cs: ca0ada5a99f9d147676f2f2da1ce17d5 -> 
+  custom:scripting/precompiled-assembly-types:Unity.Formats.Fbx.Editor: e2addd7129e664400fdaa8a057c7778c -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxMesh.cs: 36136025ac0d1b58ae078d0542791c7f -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxConstraintRotation.cs: 3333049bba08581233d423cbcae9458d -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.unity.formats.fbx@4.2.0/Editor/FbxRotationCurve.cs: 4d79211517d12383e808d7f97564ccb8 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementTangent.cs: 2b2abf74c10dcaf3633f4d98533e4487 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyMarkerELook.cs: 1d1de918f87923247ec760d3faf16ac8 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementTemplateFbxVector4.cs: 33022fe870edf908b370d76dc35c9c8f -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxSurfaceLambert.cs: 913f4d72375b7f7e78565ef67e10c9da -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyInt.cs: 6df0f2671e699b6498dcabcaa8c11ccd -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxSurfacePhong.cs: 813b21c1960d4edd5c5f62353114802e -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyEWrapMode.cs: 27e00afb727c68841210366fd4f5c513 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxAnimCurveKey.cs: 9fbd8256730f9061582d48eb9944b171 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxShape.cs: 2a21f02fd9e62c646acad319734f118d -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxQuaternion.cs: 50f937e4494a3493328884eacd695857 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxLayerElementArrayTemplateFbxVector2.cs: 5c3a6f20f8c80779ca7828c92f33194b -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPose.cs: 88c58779797f89edb2d34cfb8d39c646 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxAMatrix.cs: ceeb6eba84b583e8ed408cffdde01580 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyEDecayType.cs: 52925515d890eaaad1885ac2cab26e28 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxImplementation.cs: 7b47a353c3978648ba37a31403bb9735 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxBlendShape.cs: a98858c64d72c6e061f0cb0d29151c84 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxPropertyEProjectionType.cs: 1f2afeb1b2c72f62924f8d131875efd5 -> 
+  custom:scripting/monoscript/filePath//Library/PackageCache/com.autodesk.fbx@4.2.0/Runtime/Scripts/FbxGeometry.cs: 48013c33c3d7f63d61eeadad3653c3fa -> 
+  custom:scripting/precompiled-assembly-types:UnityEngine.Purchasing:  -> 321b88ab8592587b15dfe7f2184fdc9f
+  custom:scripting/precompiled-assembly-types:UnityEditor.Advertisements:  -> 0a969f6cb568cb6df99193a707600f32
