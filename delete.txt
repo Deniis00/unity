@@ -1,0 +1,53 @@
+
+
+        // Move the object forward along its z axis 1 unit/second.
+        //hijoSecundario.transform.Translate(Vector3.forward * Time.deltaTime);
+
+        // Move the object upward in world space 1 unit/second.
+        // hijoPrincipal.transform.Translate(Vector3.up * Time.deltaTime, Space.World);
+
+        //hijoPrincipal = principal.transform.GetChild(0).gameObject;
+        //hijoSecundario = secundario.transform.GetChild(0).gameObject;
+        //hijoSecundario.transform.position = Vector3.SmoothDamp(hijoSecundario.transform.position, hijoPrincipal.transform.position, ref velocity, smoothTime, speed);
+        
+        //hijoSecundario.transform.position =Vector3.SmoothDamp(hijoSecundario.transform.position, hijoPrincipal.transform.position,  ref velocity, 1);
+        
+
+
+        //hijoSecundario.transform.position = Vector3.MoveTowards(hijoSecundario.transform.position, hijoPrincipal.transform.position, speed * Time.deltaTime);
+        //Debug.Log("update ====> " + num);
+
+       
+
+
+        //cubo.transform.position = Vector3.MoveTowards(cubo.transform.position, targetPosition, speed * Time.deltaTime);
+        //cubo.transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime, speed);
+
+
+
+***************************************************************************************************************************
+
+    private MySqlDataReader comDr;
+
+    private float smoothedValue = 0.0f;
+    private float velocity2 = 0.0F;
+    private float smoothTime = 10f;
+
+
+
+            //Math.Round(4.34m, 2);
+            //Debug.Log("Positcion hijo ======>  x  => " + Math.Round(hijoSecundario.transform.position.x,2) + "  y => "+ hijoSecundario.transform.position.y +"  z => " + hijoSecundario.transform.position.z) ;
+            //Debug.Log("Positcion posicionFinal ======>   " + posicionFinal);
+            //Debug.Log("Positcion primeraPosicion ======>   " + primeraPosicion);
+
+
+
+**********************************************************************************************************************
+       
+
+
+        //hijoPrincipal = principal.transform.GetChild(0).gameObject;
+       // hijoSecundario = secundario.transform.GetChild(0).gameObject;
+        //hijoSecundario.transform.position = hijoPrincipal.transform.position;
+        //  hijoSecundario.transform.position = Vector3.SmoothDamp(hijoSecundario.transform.position, hijoPrincipal.transform.position, ref velocity, smoothTime, speed);
+       

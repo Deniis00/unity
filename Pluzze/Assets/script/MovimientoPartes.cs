@@ -16,107 +16,68 @@ public class MovimientoPartes : MonoBehaviour
     public   GameObject hijoSecundario;
     public GameObject cubo;
    
-    Vector3 primeraPosicion = new Vector3(16.71f, 5.71f, 36.43f );
+    Vector3 primeraPosicion = new Vector3(16.71000f, 5.71000f, 36.43000f );
     Vector3 posicionFinal;
     public float speed = 20f;
     private  int num = 0;
-    private Boolean esVisible;
-    private float smoothTime = 10f;
     private int  result = 0;
     Vector3 velocity = Vector3.zero;
-    private MySqlDataReader comDr;
-
-    private float smoothedValue = 0.0f;
-    private float velocity2 = 0.0F;
-    //void Update()
-    //{
-    //    smoothedValue = Mathf.SmoothDamp(smoothedValue, 100, ref velocity, 10);
-    //    Debug.Log(smoothedValue);
-    //}
-    private int primero = 0;
+    private int muestraPrimeraPosicion = 0;
 
     void Start()
     {
-        aTimer = new System.Timers.Timer(1000);
+        aTimer = new System.Timers.Timer(3000);
         aTimer.Elapsed += new ElapsedEventHandler(OnTick);
         aTimer.Start();
-       
-       
-      // principal.SetActive(false);
-
-        //hijoPrincipal = principal.transform.GetChild(0).gameObject;
-       // hijoSecundario = secundario.transform.GetChild(0).gameObject;
-        //hijoSecundario.transform.position = hijoPrincipal.transform.position;
-        //  hijoSecundario.transform.position = Vector3.SmoothDamp(hijoSecundario.transform.position, hijoPrincipal.transform.position, ref velocity, smoothTime, speed);
-       
-
+        // principal.SetActive(false);
     }
 
-    private void Update()
-    {
 
+    private void FixedUpdate()
+    {
         if (num > 0)
         {
             hijoPrincipal = principal.transform.GetChild(num - 1).gameObject;
             hijoSecundario = secundario.transform.GetChild(num - 1).gameObject;
             posicionFinal = hijoPrincipal.transform.position;
             num = 0;
-            primero = 1;
+            muestraPrimeraPosicion = 1;
         }
         if (hijoSecundario != null)
         {
-            //Math.Round(4.34m, 2);
-            //Debug.Log("Positcion hijo ======>  x  => " + Math.Round(hijoSecundario.transform.position.x,2) + "  y => "+ hijoSecundario.transform.position.y +"  z => " + hijoSecundario.transform.position.z) ;
-            //Debug.Log("Positcion posicionFinal ======>   " + posicionFinal);
-            //Debug.Log("Positcion primeraPosicion ======>   " + primeraPosicion);
 
-            if ((Math.Round(hijoSecundario.transform.position.x,2) != Math.Round(primeraPosicion.x,2))
-                && (Math.Round(hijoSecundario.transform.position.y, 2) != Math.Round(primeraPosicion.y, 2)) 
-                && (Math.Round(hijoSecundario.transform.position.z, 2) != Math.Round(primeraPosicion.z, 2))
-                && primero == 1)
+
+            if (Math.Round(hijoSecundario.transform.position.x,3) != Math.Round(primeraPosicion.x, 3)
+                && Math.Round(hijoSecundario.transform.position.y,3) != Math.Round(primeraPosicion.y, 3)
+                && Math.Round(hijoSecundario.transform.position.z, 3) != Math.Round(primeraPosicion.z, 3)
+                && muestraPrimeraPosicion == 1)
             {
-                Debug.Log("if   " + primeraPosicion + "  ======>   " + hijoSecundario.transform.position);
-                hijoSecundario.transform.position = Vector3.SmoothDamp(hijoSecundario.transform.position, primeraPosicion, ref velocity, 2);
+                Debug.Log("muestraPrimeraPosicion");
+                hijoSecundario.transform.position = Vector3.SmoothDamp(hijoSecundario.transform.position, primeraPosicion, ref velocity, 1);
             }
             else
             {
-                primero = 0;
-                Debug.Log("Else   " + primeraPosicion+ "  ======>   " + hijoSecundario.transform.position);
-                hijoSecundario.transform.position = Vector3.SmoothDamp(hijoSecundario.transform.position, posicionFinal, ref velocity, 2);
+                muestraPrimeraPosicion = 0;
+                Debug.Log("muestraPrimeraPosicion = 0");
+                hijoSecundario.transform.position = Vector3.SmoothDamp(hijoSecundario.transform.position, posicionFinal, ref velocity, 1);
             }
         }
 
-
-
-        // Move the object forward along its z axis 1 unit/second.
-        //hijoSecundario.transform.Translate(Vector3.forward * Time.deltaTime);
-
-        // Move the object upward in world space 1 unit/second.
-        // hijoPrincipal.transform.Translate(Vector3.up * Time.deltaTime, Space.World);
-
-        //hijoPrincipal = principal.transform.GetChild(0).gameObject;
-        //hijoSecundario = secundario.transform.GetChild(0).gameObject;
-        //hijoSecundario.transform.position = Vector3.SmoothDamp(hijoSecundario.transform.position, hijoPrincipal.transform.position, ref velocity, smoothTime, speed);
-        
-        //hijoSecundario.transform.position =Vector3.SmoothDamp(hijoSecundario.transform.position, hijoPrincipal.transform.position,  ref velocity, 1);
-        
-
-
-        //hijoSecundario.transform.position = Vector3.MoveTowards(hijoSecundario.transform.position, hijoPrincipal.transform.position, speed * Time.deltaTime);
-        //Debug.Log("update ====> " + num);
+    }
+    private void Update()
+    {
 
        
 
 
-        //cubo.transform.position = Vector3.MoveTowards(cubo.transform.position, targetPosition, speed * Time.deltaTime);
-        //cubo.transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime, speed);
 
     }
 
     private  void OnTick(object source, ElapsedEventArgs e) {
 
+        Debug.Log("OnTick");
         obtenerIdUsuario();
-        
+       
     }
    
      void OnDisable () {
@@ -131,18 +92,14 @@ public class MovimientoPartes : MonoBehaviour
         try
         {
             
-            using (MySqlConnection Con = new MySqlConnection(CreateConnStr("192.168.3.221","pega","root","humaita@.20")))
+            using (MySqlConnection Con = new MySqlConnection(CreateConnStr("192.168.3.221","ffa_2022","root","humaita@.20")))
             {
                 Con.Open();
 
-                using (MySqlCommand com = new MySqlCommand("pa_ffa_pluzze", Con))
+                using (MySqlCommand com = new MySqlCommand("pa_obtener_mostrar", Con))
                 {
                     com.CommandType = System.Data.CommandType.StoredProcedure;
-                    com.Parameters.Clear();
-                    com.Parameters.AddWithValue("par_opcion",1);
-                    com.Parameters.AddWithValue("par_idFuncionario",0);
-
-
+                   
                     result = Convert.ToInt32(com.ExecuteScalar());
 
                     if (result > 0)
@@ -170,15 +127,14 @@ public class MovimientoPartes : MonoBehaviour
         try
         {
            
-            using (MySqlConnection Con = new MySqlConnection(CreateConnStr("192.168.3.221", "pega", "root", "humaita@.20")))
+            using (MySqlConnection Con = new MySqlConnection(CreateConnStr("192.168.3.221", "ffa_2022", "root", "humaita@.20")))
             {
                 Con.Open();
 
-                using (MySqlCommand com = new MySqlCommand("pa_ffa_pluzze", Con))
+                using (MySqlCommand com = new MySqlCommand("pa_actualizar_mostrar", Con))
                 {
                     com.CommandType = System.Data.CommandType.StoredProcedure;
                     com.Parameters.Clear();
-                    com.Parameters.AddWithValue("par_opcion", 2);
                     com.Parameters.AddWithValue("par_idFuncionario", par_idFuncionario);
                     com.ExecuteNonQuery();
 
