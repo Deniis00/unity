@@ -6,6 +6,7 @@ using System.IO;
 using System.Net;
 using System.Timers;
 using System.Xml.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -26,15 +27,15 @@ public class MovimientoPartes : MonoBehaviour
     private int result = 0;
     Vector3 velocity = Vector3.zero;
     private int muestraPrimeraPosicion = 0;
-
+    private Funcionario funcionarioMostrar;
     private string empresa;
 
     void Start()
     {
-        aTimer = new System.Timers.Timer(10000);
+        aTimer = new System.Timers.Timer(5000);
         aTimer.Elapsed += new ElapsedEventHandler(OnTick);
-        //aTimer.Start();
-        pruebaAPI();
+        aTimer.Start();
+        ObtenerUsuarioAMostrar();
         //extraerDatosJsonR();
         // principal.SetActive(false);
     }
@@ -84,8 +85,7 @@ public class MovimientoPartes : MonoBehaviour
     {
 
         Debug.Log("OnTick");
-        pruebaAPI();
-        //obtenerIdUsuario();
+        ObtenerUsuarioAMostrar();
 
     }
 
@@ -95,11 +95,11 @@ public class MovimientoPartes : MonoBehaviour
         Debug.Log("timerr");
     }
 
-    private void pruebaAPI()
+    private void ObtenerUsuarioAMostrar()
     {
         try
         {   
-            WebRequest request = WebRequest.Create("http://ffa-2022:90/api/obtener-muestra-pantalla");
+            WebRequest request = WebRequest.Create("http://ffa-2022/api/obtener-muestra-pantalla");
             request.Method = "GET";
 
             using (WebResponse response = request.GetResponse())
@@ -108,54 +108,30 @@ public class MovimientoPartes : MonoBehaviour
                 {
                     //XmlTextReader reader = new XmlTextReader(stream);
                     StreamReader reader = new StreamReader(stream);
-                    string resp = reader.ReadToEnd();
-                   Debug.Log(resp);
 
-                    dynamic jsonObj = JsonConvert.DeserializeObject(resp);
-                    foreach (var obj in jsonObj.Properties())
+                    var json = reader.ReadToEnd();
+
+                    Data data = JsonConvert.DeserializeObject<Data>(json);
+
+                    Debug.Log("success ====> " + data.success);
+                    if (data.success == 1)
                     {
-                        if (obj.Name == "data")
-                        {
-                            foreach (var obj2 in obj.Value)
-                            {
-                                Debug.Log(obj2);
-                            }
-                        }
+                        Debug.Log("id ===>   " + data.funcionario.id);
+                        Debug.Log("id_funcionario ===>   " + data.funcionario.id_funcionario);
+                        Debug.Log("nombre_funcionario ===>   " + data.funcionario.nombre_funcionario);
+
+                    
+                        funcionarioMostrar = new Funcionario();
+                        funcionarioMostrar = data.funcionario;
+                        num = funcionarioMostrar.id;
+                        Debug.Log("funcionarioMostrar =====>  " + funcionarioMostrar.id);
+                        actualizarIdFuncionario(funcionarioMostrar.id);
                     }
 
-
-                    //JArray jsonPreservar = JArray.Parse(resp);
-                    /*var objetos = JObject.Parse(resp);
-
-
-
-                    Debug.Log("pasa objetos");
-
-                  string  totalCreditsRemoved = (String)objetos.Value["totalCreditsRemoved"];
-                    /* foreach (JObject jsonOperaciones in jsonPreservar.Children<JObject>())
-                     {
-                         //Aqui para poder identificar las propiedades y sus valores
-                         /*foreach (JProperty jsonOPropiedades in jsonOperaciones.Properties())
-                         {
-                             string propiedad = jsonOPropiedades.Name;
-                             if (propiedad.Equals("idgoOperacion"))
-                             {
-                                 var idgoOperacion = Convert.ToInt32(jsonOPropiedades.Value);
-                             }
-                         }/*
-
-                         Debug.Log(jsonOperaciones);
-                         //Aqui puedes acceder al objeto y obtener sus valores
-                         var idgoOperacion = Convert.ToInt32(jsonOperaciones["idgoOperacion"]);
-
-                     }*/
-
+                    
 
                 }
             }
-
-
-           
 
         }
         catch (Exception ex)
@@ -165,119 +141,41 @@ public class MovimientoPartes : MonoBehaviour
         }
     }
 
-    private void extraerDatosJsonR()
-    {
-        String cadena = "http://ffa-2022:90/api/obtener-muestra-pantalla";
-
-        var httpWebRequest = (HttpWebRequest)WebRequest.Create(cadena);
-        httpWebRequest.ContentType = "application/json";
-        httpWebRequest.Method = "GET";
-        try
-        {
-            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
-            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
-            {
-                //Extraer datos de la cadena Json 
-                var result = streamReader.ReadToEnd();
-
-                Debug.Log(result);
-                //Convertir la cadena de texto de un Json a n JArray
-                JArray jsonPreservar = JArray.Parse(result);
-                foreach (JObject jsonOperaciones in jsonPreservar.Children<JObject>())
-                {
-                    //Aqui para poder identificar las propiedades y sus valores
-                    foreach (JProperty jsonOPropiedades in jsonOperaciones.Properties())
-                    {
-                        //Debes recorrer el arreglo completo, asi puedes obtener todos los valores las propiedades
-                        string propiedad = jsonOPropiedades.Name;
-
-                        Debug.Log("propiedad ====> "+ propiedad);
-
-                        //Leer Json y sacar valor de un campo
-                        if (propiedad.Equals("data"))
-                        {
-                            //Recorrer Json tomando parte de los valores
-                           // var val = Convert.ToString(jsonOPropiedades.Value);
-                            
-                            //Debug.Log(val);
-                            //return;
-                        }
-                    }
-                }
-                JObject data = JObject.Parse(jsonPreservar[0].ToString());
-                var id = Convert.ToInt32(data["id"]);
-                Debug.Log(id);
-            }
-        }
-        catch (WebException ex)
-        {
-            Debug.Log("Error al consultar API " + ex.Message);
-        }
-
-    }
+   
 
 
-
-    private void obtenerIdUsuario()
+   
+    private void actualizarIdFuncionario(int par_idFuncionario)
     {
 
 
         try
         {
-
-            using (MySqlConnection Con = new MySqlConnection(CreateConnStr("192.168.3.221", "ffa_2022", "root", "humaita@.20")))
+            WebRequest request = WebRequest.Create("http://ffa-2022/api/actualizar-bloque-mostrado/"+ par_idFuncionario);
+            request.Method = "PUT";
+            using (WebResponse response = request.GetResponse())
             {
-                Con.Open();
-
-                using (MySqlCommand com = new MySqlCommand("pa_obtener_mostrar", Con))
+                using (Stream stream = response.GetResponseStream())
                 {
-                    com.CommandType = System.Data.CommandType.StoredProcedure;
+                    //XmlTextReader reader = new XmlTextReader(stream);
+                    StreamReader reader = new StreamReader(stream);
 
-                    result = Convert.ToInt32(com.ExecuteScalar());
+                    var json = reader.ReadToEnd();
 
-                    if (result > 0)
-                    {
-                        num = result;
-                        actualizarIdUsuario(result);
-                        Debug.Log("recupero ====> " + num);
-                    }
+                    Data data = JsonConvert.DeserializeObject<Data>(json);
+
+                    Debug.Log("************    actualizarIdFuncionario    *****************");
+                    Debug.Log("success ====> " + data.success);
+                    Debug.Log("message ====> " + data.message);
 
                 }
-
             }
+
+
         }
         catch (Exception ex)
         {
-            Debug.Log("Error en la base de datos  obtenerIdUsuario  " + ex.Message);
-
-        }
-
-    }
-    private void actualizarIdUsuario(int par_idFuncionario)
-    {
-
-
-        try
-        {
-
-            using (MySqlConnection Con = new MySqlConnection(CreateConnStr("192.168.3.221", "ffa_2022", "root", "humaita@.20")))
-            {
-                Con.Open();
-
-                using (MySqlCommand com = new MySqlCommand("pa_actualizar_mostrar", Con))
-                {
-                    com.CommandType = System.Data.CommandType.StoredProcedure;
-                    com.Parameters.Clear();
-                    com.Parameters.AddWithValue("par_idFuncionario", par_idFuncionario);
-                    com.ExecuteNonQuery();
-
-                }
-
-            }
-        }
-        catch (Exception ex)
-        {
-            Debug.Log("Error en la base de datos  actualizarIdUsuario  " + ex.Message);
+            Debug.Log("Error al actualizar bloque mostrado " + ex.Message);
         }
     }
 
@@ -294,17 +192,18 @@ public class MovimientoPartes : MonoBehaviour
 
 }
 
-public class Person
+
+public class Funcionario
 {
-    public int Id { get; set; }
-    public string Firstname { get; set; }
-    public string Lastname { get; set; }
-    public string City { get; set; }
+    public int id { get; set; }
+    public int id_funcionario { get; set; }
+    public string nombre_funcionario { get; set; }
 }
-public class DataReadyPerson
+
+public class Data
 {
-    public int DataReadPersonId { get; set; }
-    public string fname { get; set; }
-    public string lname { get; set; }
-    public string CityOfResidence { get; set; }
+    public Funcionario funcionario { get; set; }
+    public int success { get; set; }
+    public int error { get; set; }
+    public string message { get; set; } 
 }

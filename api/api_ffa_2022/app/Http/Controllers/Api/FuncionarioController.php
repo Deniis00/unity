@@ -55,7 +55,7 @@ class FuncionarioController extends Controller
         //dd($funcionario->id);
         if($funcionario != null ){
         return response()->json([
-            'data' => [
+            'funcionario' => [
                 'id' => $funcionario -> id,
                 'id_funcionario' => $funcionario -> id_funcionario,
                 'nombre_funcionario' => $funcionario -> nombre_funcionario
