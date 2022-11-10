@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\Api\FuncionarioController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\V1\BookController as BookV1;
+use App\Http\Resources\FuncionarioResource;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +24,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::apiResource('v1/books', BookV1::class)
       ->only(['index','show', 'destroy'])
       /*->middleware('auth:sanctum')*/;
+Route::apiResource('funcionarios', FuncionarioController::class)
+->only(['index','show', 'destroy']);
+
+Route::get('/obtener-muestra-pantalla',[FuncionarioController::class,'obtenerMuestraPantalla']);
+Route::put('/actualizar-bloque-mostrado/{id}',[FuncionarioController::class,'actualizarBloqueMostrado']);
+Route::put('/actualizar-bloque-a-mostrar/{id_funcionario}',[FuncionarioController::class,'actualizarBloqueAMostar']);
