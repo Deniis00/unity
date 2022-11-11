@@ -1,14 +1,11 @@
-using MySql.Data.MySqlClient;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using System;
+using System.Configuration;
 using System.IO;
 using System.Net;
 using System.Timers;
-using System.Xml.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
-
+using System.Xml;
 
 
 public class MovimientoPartes : MonoBehaviour
@@ -24,20 +21,24 @@ public class MovimientoPartes : MonoBehaviour
     Vector3 posicionFinal;
     public float speed = 20f;
     private int num = 0;
-    private int result = 0;
     Vector3 velocity = Vector3.zero;
     private int muestraPrimeraPosicion = 0;
     private Funcionario funcionarioMostrar;
-    private string empresa;
+    private string URLString = "C:/config/config.xml";
+    private string url_ip;
+
 
     void Start()
-    {
+    {   
         aTimer = new System.Timers.Timer(5000);
         aTimer.Elapsed += new ElapsedEventHandler(OnTick);
-        aTimer.Start();
-        ObtenerUsuarioAMostrar();
-        //extraerDatosJsonR();
-        // principal.SetActive(false);
+
+        obtenerUrlAPI();
+
+
+        //aTimer.Start();
+        //ObtenerUsuarioAMostrar();
+
     }
 
 
@@ -99,7 +100,7 @@ public class MovimientoPartes : MonoBehaviour
     {
         try
         {   
-            WebRequest request = WebRequest.Create("http://ffa-2022/api/obtener-muestra-pantalla");
+            WebRequest request = WebRequest.Create(url_ip+"api/obtener-muestra-pantalla");
             request.Method = "GET";
 
             using (WebResponse response = request.GetResponse())
@@ -151,7 +152,7 @@ public class MovimientoPartes : MonoBehaviour
 
         try
         {
-            WebRequest request = WebRequest.Create("http://ffa-2022/api/actualizar-bloque-mostrado/"+ par_idFuncionario);
+            WebRequest request = WebRequest.Create(url_ip+"api/actualizar-bloque-mostrado/"+ par_idFuncionario);
             request.Method = "PUT";
             using (WebResponse response = request.GetResponse())
             {
@@ -188,6 +189,18 @@ public class MovimientoPartes : MonoBehaviour
         user + ";password=" + pass + ";CHARSET=utf8;pooling=false;Allow User Variables=True";
         return connStr;
     }
+
+    public void obtenerUrlAPI()
+    {
+        XmlDocument xmlDcoument = new XmlDocument();
+        xmlDcoument.Load(URLString);
+        XmlNodeList xmlNodeList = xmlDcoument.DocumentElement.SelectNodes("/configuration");
+        foreach (XmlNode xmlNode in xmlNodeList)
+        {
+            url_ip = xmlNode.SelectSingleNode("urlAPI").InnerText;
+        }
+        Debug.Log(url_ip);
+;    }
 
 
 }
