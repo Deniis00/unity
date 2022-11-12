@@ -1,6 +1,5 @@
 using Newtonsoft.Json;
 using System;
-using System.Configuration;
 using System.IO;
 using System.Net;
 using System.Timers;
@@ -23,6 +22,7 @@ public class MovimientoPartes : MonoBehaviour
     private int num = 0;
     Vector3 velocity = Vector3.zero;
     private int muestraPrimeraPosicion = 0;
+    private int muestraSegundaPosicion = 0;
     private Funcionario funcionarioMostrar;
     private string URLString = "C:/config/config.xml";
     private string url_ip;
@@ -34,10 +34,8 @@ public class MovimientoPartes : MonoBehaviour
         aTimer.Elapsed += new ElapsedEventHandler(OnTick);
 
         obtenerUrlAPI();
-
-
-        //aTimer.Start();
-        //ObtenerUsuarioAMostrar();
+        aTimer.Start();
+        ObtenerUsuarioAMostrar();
 
     }
 
@@ -51,24 +49,37 @@ public class MovimientoPartes : MonoBehaviour
             posicionFinal = hijoPrincipal.transform.position;
             num = 0;
             muestraPrimeraPosicion = 1;
+            muestraSegundaPosicion = 1;
         }
         if (hijoSecundario != null)
         {
 
 
-            if (Math.Round(hijoSecundario.transform.position.x, 3) != Math.Round(primeraPosicion.x, 3)
-                && Math.Round(hijoSecundario.transform.position.y, 3) != Math.Round(primeraPosicion.y, 3)
-                && Math.Round(hijoSecundario.transform.position.z, 3) != Math.Round(primeraPosicion.z, 3)
+            if (Math.Round(hijoSecundario.transform.position.x, 2) != Math.Round(primeraPosicion.x, 2)
+                && Math.Round(hijoSecundario.transform.position.y, 2) != Math.Round(primeraPosicion.y, 2)
+                && Math.Round(hijoSecundario.transform.position.z, 2) != Math.Round(primeraPosicion.z, 2)
                 && muestraPrimeraPosicion == 1)
             {
-                Debug.Log("muestraPrimeraPosicion");
+                //Debug.Log("muestraPrimeraPosicion");
                 hijoSecundario.transform.position = Vector3.SmoothDamp(hijoSecundario.transform.position, primeraPosicion, ref velocity, 1);
             }
-            else
+            else if(muestraSegundaPosicion == 1)
             {
                 muestraPrimeraPosicion = 0;
-                Debug.Log("muestraPrimeraPosicion = 0");
+                //Debug.Log("muestraPrimeraPosicion = 0");
                 hijoSecundario.transform.position = Vector3.SmoothDamp(hijoSecundario.transform.position, posicionFinal, ref velocity, 1);
+                Debug.Log("Hiji Secu ===> "+hijoSecundario.transform.position);
+                Debug.Log("pos final ===> "+posicionFinal);
+
+                if (Math.Round(hijoSecundario.transform.position.x, 2) == Math.Round(posicionFinal.x, 2)
+                      && Math.Round(hijoSecundario.transform.position.y, 2) == Math.Round(posicionFinal.y, 2)
+                      && Math.Round(hijoSecundario.transform.position.z, 2) == Math.Round(posicionFinal.z, 2)
+                     )
+                {
+                    muestraSegundaPosicion = 0;
+                    Debug.Log("muestraSegundaPosicion = 0");
+                }
+
             }
         }
 
@@ -114,18 +125,18 @@ public class MovimientoPartes : MonoBehaviour
 
                     Data data = JsonConvert.DeserializeObject<Data>(json);
 
-                    Debug.Log("success ====> " + data.success);
+                    //Debug.Log("success ====> " + data.success);
                     if (data.success == 1)
                     {
-                        Debug.Log("id ===>   " + data.funcionario.id);
-                        Debug.Log("id_funcionario ===>   " + data.funcionario.id_funcionario);
-                        Debug.Log("nombre_funcionario ===>   " + data.funcionario.nombre_funcionario);
+                        //Debug.Log("id ===>   " + data.funcionario.id);
+                        //Debug.Log("id_funcionario ===>   " + data.funcionario.id_funcionario);
+                       // Debug.Log("nombre_funcionario ===>   " + data.funcionario.nombre_funcionario);
 
                     
                         funcionarioMostrar = new Funcionario();
                         funcionarioMostrar = data.funcionario;
                         num = funcionarioMostrar.id;
-                        Debug.Log("funcionarioMostrar =====>  " + funcionarioMostrar.id);
+                      //  Debug.Log("funcionarioMostrar =====>  " + funcionarioMostrar.id);
                         actualizarIdFuncionario(funcionarioMostrar.id);
                     }
 
@@ -165,9 +176,9 @@ public class MovimientoPartes : MonoBehaviour
 
                     Data data = JsonConvert.DeserializeObject<Data>(json);
 
-                    Debug.Log("************    actualizarIdFuncionario    *****************");
-                    Debug.Log("success ====> " + data.success);
-                    Debug.Log("message ====> " + data.message);
+                  //  Debug.Log("************    actualizarIdFuncionario    *****************");
+                   // Debug.Log("success ====> " + data.success);
+                    //Debug.Log("message ====> " + data.message);
 
                 }
             }
@@ -181,15 +192,6 @@ public class MovimientoPartes : MonoBehaviour
     }
 
 
-
-    public static string CreateConnStr(string server, string databaseName, string user, string pass)
-    {
-
-        string connStr = "server=" + server + ";database=" + databaseName + ";uid=" +
-        user + ";password=" + pass + ";CHARSET=utf8;pooling=false;Allow User Variables=True";
-        return connStr;
-    }
-
     public void obtenerUrlAPI()
     {
         XmlDocument xmlDcoument = new XmlDocument();
@@ -199,7 +201,7 @@ public class MovimientoPartes : MonoBehaviour
         {
             url_ip = xmlNode.SelectSingleNode("urlAPI").InnerText;
         }
-        Debug.Log(url_ip);
+        
 ;    }
 
 

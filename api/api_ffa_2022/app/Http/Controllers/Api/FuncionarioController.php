@@ -78,7 +78,7 @@ class FuncionarioController extends Controller
     {
         try {
             $funcionario = Funcionario::find($id);
-            
+
             $funcionario->muestra_pantalla = 2;
 
             $funcionario->update();
