@@ -16,7 +16,7 @@ public class MovimientoPartes : MonoBehaviour
     public GameObject hijoSecundario;
     public GameObject cubo;
 
-    Vector3 primeraPosicion = new Vector3(16.71000f, 5.71000f, 36.43000f);
+    Vector3 primeraPosicion = new Vector3(115.98f, 136.90f, 76.00f);
     Vector3 posicionFinal;
     public float speed = 20f;
     private int num = 0;
@@ -26,11 +26,11 @@ public class MovimientoPartes : MonoBehaviour
     private Funcionario funcionarioMostrar;
     private string URLString = "C:/config/config.xml";
     private string url_ip;
-
+   
 
     void Start()
     {   
-        aTimer = new System.Timers.Timer(5000);
+        aTimer = new System.Timers.Timer(1000);
         aTimer.Elapsed += new ElapsedEventHandler(OnTick);
 
         obtenerUrlAPI();
@@ -44,12 +44,34 @@ public class MovimientoPartes : MonoBehaviour
     {
         if (num > 0)
         {
-            hijoPrincipal = principal.transform.GetChild(num - 1).gameObject;
-            hijoSecundario = secundario.transform.GetChild(num - 1).gameObject;
-            posicionFinal = hijoPrincipal.transform.position;
+            
+            
+           
+            foreach (Transform chil in principal.transform)
+            {
+               
+                if (Int32.Parse(chil.gameObject.name) == num)
+                {
+                    hijoPrincipal = chil.transform.gameObject;
+                    posicionFinal = hijoPrincipal.transform.position;
+                }
+            }
+
+            foreach (Transform chil in secundario.transform)
+            {
+
+                if (Int32.Parse(chil.gameObject.name) == num)
+                {
+                    hijoSecundario = chil.transform.gameObject;
+                }
+            }
+
             num = 0;
+
             muestraPrimeraPosicion = 1;
             muestraSegundaPosicion = 1;
+
+            
         }
         if (hijoSecundario != null)
         {
@@ -61,15 +83,13 @@ public class MovimientoPartes : MonoBehaviour
                 && muestraPrimeraPosicion == 1)
             {
                 //Debug.Log("muestraPrimeraPosicion");
-                hijoSecundario.transform.position = Vector3.SmoothDamp(hijoSecundario.transform.position, primeraPosicion, ref velocity, 1);
+                hijoSecundario.transform.position = Vector3.SmoothDamp(hijoSecundario.transform.position, primeraPosicion, ref velocity, 0.2f);
             }
             else if(muestraSegundaPosicion == 1)
             {
                 muestraPrimeraPosicion = 0;
-                //Debug.Log("muestraPrimeraPosicion = 0");
-                hijoSecundario.transform.position = Vector3.SmoothDamp(hijoSecundario.transform.position, posicionFinal, ref velocity, 1);
-                Debug.Log("Hiji Secu ===> "+hijoSecundario.transform.position);
-                Debug.Log("pos final ===> "+posicionFinal);
+                hijoSecundario.transform.position = Vector3.SmoothDamp(hijoSecundario.transform.position, posicionFinal, ref velocity, 2);
+               
 
                 if (Math.Round(hijoSecundario.transform.position.x, 2) == Math.Round(posicionFinal.x, 2)
                       && Math.Round(hijoSecundario.transform.position.y, 2) == Math.Round(posicionFinal.y, 2)
@@ -77,7 +97,9 @@ public class MovimientoPartes : MonoBehaviour
                      )
                 {
                     muestraSegundaPosicion = 0;
-                    Debug.Log("muestraSegundaPosicion = 0");
+                    hijoPrincipal.SetActive(false);
+                    hijoSecundario.transform.position = hijoPrincipal.transform.position;
+                    
                 }
 
             }
@@ -96,7 +118,6 @@ public class MovimientoPartes : MonoBehaviour
     private void OnTick(object source, ElapsedEventArgs e)
     {
 
-        Debug.Log("OnTick");
         ObtenerUsuarioAMostrar();
 
     }
@@ -104,7 +125,7 @@ public class MovimientoPartes : MonoBehaviour
     void OnDisable()
     {
         aTimer.Dispose();
-        Debug.Log("timerr");
+    
     }
 
     private void ObtenerUsuarioAMostrar()
@@ -135,8 +156,8 @@ public class MovimientoPartes : MonoBehaviour
                     
                         funcionarioMostrar = new Funcionario();
                         funcionarioMostrar = data.funcionario;
-                        num = funcionarioMostrar.id;
-                      //  Debug.Log("funcionarioMostrar =====>  " + funcionarioMostrar.id);
+                        num = funcionarioMostrar.id_funcionario;
+                    //   Debug.Log("funcionarioMostrar =====>  " + num);
                         actualizarIdFuncionario(funcionarioMostrar.id);
                     }
 
