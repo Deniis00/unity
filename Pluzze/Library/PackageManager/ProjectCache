@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638026367279406666
+      ticks: 638043124898903161
     m_Hash: 81910320
   m_LockFileStatus:
     m_FilePath: C:/Users/denis.ayala/Desktop/unity/Pluzze/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638026367279406666
+      ticks: 638043124898903161
     m_Hash: 1050065428
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -152,6 +152,7 @@ m_ResolvedPackages:
     - 1.17.1
     - 1.17.2
     - 1.17.6
+    - 1.17.7
     - 2.0.0-preview.6
     - 2.0.0-preview.8
     - 2.0.0-preview.15
@@ -165,6 +166,7 @@ m_ResolvedPackages:
     compatible:
     - 1.17.2
     - 1.17.6
+    - 1.17.7
     - 2.0.0-preview.6
     - 2.0.0-preview.8
     - 2.0.0-preview.15
@@ -175,7 +177,7 @@ m_ResolvedPackages:
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
-    recommended: 1.17.6
+    recommended: 1.17.7
     deprecated: []
   dependencies:
   - name: com.unity.services.core
@@ -586,9 +588,11 @@ m_ResolvedPackages:
     - 1.7.0
     - 1.7.1
     - 1.7.2
+    - 1.8.0
     compatible:
     - 1.7.1
     - 1.7.2
+    - 1.8.0
     recommended: 1.7.2
     deprecated: []
   dependencies:
@@ -3100,12 +3104,14 @@ m_ResolvedPackages:
     - 1.1.33
     - 1.3.0
     - 2.0.1-exp.1
+    - 2.0.1-exp.2
     - 2.0.1-pre.12
     - 2.0.1-pre.18
     compatible:
     - 1.1.33
     - 1.3.0
     - 2.0.1-exp.1
+    - 2.0.1-exp.2
     - 2.0.1-pre.12
     - 2.0.1-pre.18
     recommended: 1.1.33

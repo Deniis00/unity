@@ -26,16 +26,22 @@ public class MovimientoPartes : MonoBehaviour
     private Funcionario funcionarioMostrar;
     private string URLString = "C:/config/config.xml";
     private string url_ip;
-   
+    int number = 0;
+    int iniciarAudio = 0;
+    float secondsCounter = 0;
+    float secondsToCount = 1;
+    private new AudioSource audio;
+
 
     void Start()
     {   
-        aTimer = new System.Timers.Timer(1000);
+        aTimer = new System.Timers.Timer(500);
         aTimer.Elapsed += new ElapsedEventHandler(OnTick);
 
         obtenerUrlAPI();
         aTimer.Start();
         ObtenerUsuarioAMostrar();
+        audio = secundario.GetComponent<AudioSource>();
 
     }
 
@@ -68,6 +74,7 @@ public class MovimientoPartes : MonoBehaviour
 
             num = 0;
 
+
             muestraPrimeraPosicion = 1;
             muestraSegundaPosicion = 1;
 
@@ -83,13 +90,33 @@ public class MovimientoPartes : MonoBehaviour
                 && muestraPrimeraPosicion == 1)
             {
                 //Debug.Log("muestraPrimeraPosicion");
-                hijoSecundario.transform.position = Vector3.SmoothDamp(hijoSecundario.transform.position, primeraPosicion, ref velocity, 0.2f);
+                hijoSecundario.transform.position = Vector3.SmoothDamp(hijoSecundario.transform.position, primeraPosicion, ref velocity, 0.1f);
             }
             else if(muestraSegundaPosicion == 1)
             {
-                muestraPrimeraPosicion = 0;
-                hijoSecundario.transform.position = Vector3.SmoothDamp(hijoSecundario.transform.position, posicionFinal, ref velocity, 2);
+                
+                if(iniciarAudio == 0)
+                {
+                    iniciarAudio = 1;
+                    playAudio();
+                }
+
+
+                /*if (muestraPrimeraPosicion == 1)
+                {
+                    secondsCounter += Time.deltaTime;
+                    if (secondsCounter >= secondsToCount)
+                    {
+                        secondsCounter = 0;
+                        number++;
+                    }
+
+                }*/
+
+                    muestraPrimeraPosicion = 0;
+                    hijoSecundario.transform.position = Vector3.SmoothDamp(hijoSecundario.transform.position, posicionFinal, ref velocity, 2);
                
+
 
                 if (Math.Round(hijoSecundario.transform.position.x, 2) == Math.Round(posicionFinal.x, 2)
                       && Math.Round(hijoSecundario.transform.position.y, 2) == Math.Round(posicionFinal.y, 2)
@@ -113,6 +140,11 @@ public class MovimientoPartes : MonoBehaviour
 
 
 
+    }
+
+    private void playAudio()
+    {
+        audio.Play();
     }
 
     private void OnTick(object source, ElapsedEventArgs e)
